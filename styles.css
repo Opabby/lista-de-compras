@@ -117,7 +117,7 @@ ul {
 }
 
 .checkbox-input {
-    display: none;
+    display: none !important;
 }
 
 .checkbox-customizado {
