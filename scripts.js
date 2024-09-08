@@ -1,6 +1,7 @@
 const item = document.getElementById("input-item");
 const botaoSalvarItem = document.getElementById("adicionar-item");
 const listaDeCompras = document.getElementById("lista-de-compras");
+const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
 
 botaoSalvarItem.addEventListener("click", adicionarItem);
@@ -28,8 +29,10 @@ function adicionarItem(e) {
         const checkboxCustomizado = evento.currentTarget.querySelector('.checkbox-customizado');
         if (checkBoxInput.checked) {
             checkboxCustomizado.classList.add("checked");
+            listaComprados.appendChild(itemDaLista);
         } else {
             checkboxCustomizado.classList.remove("checked");
+            listaDeCompras.appendChild(itemDaLista);
         }
     });
 
