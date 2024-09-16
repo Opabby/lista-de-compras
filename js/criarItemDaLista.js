@@ -1,3 +1,5 @@
+import { excluirItem } from "./excluirItem.js";
+
 const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
 const listaDeCompras = document.getElementById("lista-de-compras");
@@ -53,6 +55,10 @@ export function criarItemDaLista(item) {
     const containerBotoes = document.createElement("div");
     const botaoRemover = document.createElement("button");
     botaoRemover.classList.add("botao-acao");
+
+    botaoRemover.addEventListener('click', function() {
+        excluirItem(itemDaLista);
+    })
 
     const botaoEditar = document.createElement("button");
     botaoEditar.classList.add("botao-acao");
