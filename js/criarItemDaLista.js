@@ -1,5 +1,6 @@
 const listaComprados = document.getElementById("lista-comprados");
 let contador = 0;
+const listaDeCompras = document.getElementById("lista-de-compras");
 
 export function criarItemDaLista(item) {
     const itemDaLista = document.createElement("li");
