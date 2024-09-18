@@ -18,4 +18,5 @@ export function adicionarItem(e) {
     listaDeCompras.appendChild(itemDaLista);
     verificarListaVazia(listaDeCompras);
     verificarListaComprados(listaComprados);
+    item.value = "";
 }
